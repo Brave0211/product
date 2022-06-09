@@ -1,0 +1,119 @@
+.great-business {
+   padding-top: 76px;
+   padding-bottom: 67px;
+}
+
+.great-business__container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.great-business__content {
+   max-width: 535px;
+}
+
+.great-business__title {
+   max-width: 411px;
+   margin: 0;
+   margin-bottom: 14px;
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 149%;
+   letter-spacing: -0.03em;
+}
+
+.great-business__desc {
+   margin: 0;
+   margin-bottom: 24px;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 160%;
+   letter-spacing: -0.03em;
+}
+
+.great-business__input-wrapper {
+   position: relative;
+   z-index: 1;
+   margin-bottom: 24px;
+}
+
+.great-business__input {
+   width: 469px;
+   padding: 25px 27px;
+   border: 1px solid #eaeaea;
+   border-radius: 100px;
+}
+
+.great-business__btn {
+   position: absolute;
+   z-index: 1;
+   top: 6px;
+   right: 75px;
+}
+
+.great-business__btn-link {
+   display: inline-block;
+   padding: 20px 19px 20px 24px;
+   text-decoration: none;
+   color: $color-white;
+   background-color: $color-mystic;
+   border-radius: 100px;
+   &:hover{
+      opacity: 0.7;
+   }
+}
+
+.great-business__user {
+   display: flex;
+   align-items: center;
+}
+
+.great-business__user-img {
+   &:not(:first-child){
+      margin-left: -24px;
+   }
+}
+
+.great-business__user-txt {
+   margin: 0;
+   margin-left: 9px;
+}
+
+.great-business__user-txt-in {
+   color: $color-mystic;
+}
+
+@include breakpoint-down(520px){
+   .great-business{
+      padding-top: 50px;
+      padding-bottom: 47px;
+   }
+
+   .great-business__container{
+      flex-direction: column;
+   }
+
+   .great-business__title{
+      max-width: 369px;
+      margin: 0 auto;
+      margin-bottom: 16px;
+      font-weight: 600;
+      font-size: 36px;
+      text-align: center;
+   }
+
+   .great-business__desc{
+      max-width: 353px;
+      margin: 0 auto;
+      margin-bottom: 19px;
+      text-align: center;
+   }
+
+   .great-business__btn{
+      right: 20px;
+   }
+
+   .great-business__user{
+      margin-bottom: 88px;
+   }
+}
